@@ -57,7 +57,7 @@ El equipo requiere evaluar el comportamiento global de las contrataciones y resp
 ## 5. Trazabilidad de requisitos
 
 | Requisito | Datos requeridos | Dimensiones | Medidas/KPI | Consulta SQL | Visualizacion |
-|---|---|---|---|---|---|
+
 | R1 | Fecha, HIRED | Dim_Date | Applications, Hired, Hiring Rate | Tendencia mensual | Grafico de lineas |
 | R2 | Tecnologia, HIRED | Dim_Technology | Applications, Hired, Hiring Rate | Resultado por tecnologia | Barras horizontales |
 | R3 | Seniority, YOE, HIRED | Dim_Candidate_Profile | Applications, Hired, Hiring Rate | Resultado por perfil | Columnas agrupadas |
@@ -103,6 +103,8 @@ Se diseño un esquema en estrella (Star Schema) compuesto por una tabla de hecho
 | Fact_Applications | Almacena las llaves foraneas, los puntajes de las pruebas y las medidas numericas acumuladas. |
 
 Para mantener la integridad del modelo y desvincular el Data Warehouse de los identificadores del archivo fuente, cada dimension utiliza una llave sustituta (surrogate key) de tipo entero: `date_key`, `country_key`, `technology_key` y `candidate_profile_key`.
+<img width="704" height="453" alt="image" src="https://github.com/user-attachments/assets/37b7a073-5a66-4e35-9b6e-88d4487caf54" />
+
 
 ## 11. Proceso ETL
 
