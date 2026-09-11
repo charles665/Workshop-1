@@ -1,0 +1,12 @@
+.env
+/candidates.csv
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+results/*.csv
+results/*.json
+!results/.gitkeep
+*.log
