@@ -102,8 +102,9 @@ Se diseño un esquema en estrella (Star Schema) compuesto por una tabla de hecho
 | Dim_Country | Permite analizar los resultados por pais de origen. |
 | Fact_Applications | Almacena las llaves foraneas, los puntajes de las pruebas y las medidas numericas acumuladas. |
 
-Para mantener la integridad del modelo y desvincular el Data Warehouse de los identificadores del archivo fuente, cada dimension utiliza una llave sustituta (surrogate key) de tipo entero: `date_key`, `country_key`, `technology_key` y `candidate_profile_key`.
-<img width="704" height="453" alt="image" src="https://github.com/user-attachments/assets/37b7a073-5a66-4e35-9b6e-88d4487caf54" />
+<img width="615" height="397" alt="dimensiones" src="https://github.com/user-attachments/assets/872e1bd8-3f6b-4b14-866b-ab5be458cc64" />
+
+
 
 
 ## 11. Proceso ETL
